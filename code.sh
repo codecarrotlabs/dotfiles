@@ -13,11 +13,15 @@ do
     "VS Code")
       echo "Opening ${PROJECT_NAME} in VS Code"
       code ${PROJECT_PATH}
+      cd ${PROJECT_PATH}
+      exec bash
       break
       ;;
     "VS Code Insiders")
       echo "Opening ${PROJECT_NAME} in VS Code Insiders"
       code-insiders ${PROJECT_PATH}
+      cd ${PROJECT_PATH}
+      exec bash
       break
       ;;
     *)
@@ -26,5 +30,3 @@ do
       ;;
   esac
 done
-
-cd ${PROJECT_PATH}
