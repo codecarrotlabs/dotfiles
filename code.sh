@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# What it does?
+#
+# Open your project in preferred text editor and cd into project's directory
+
 read -p "Enter project name: " PROJECT_NAME
 read -p "Enter project's path: " PROJECT_PATH
 echo "Select your editor: "
